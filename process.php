@@ -1,30 +1,16 @@
 <?php
-// Club Registration Form Processing
-// TODO: Add your PHP processing code here starting in Step 3
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Extract POST data safely
+    $name = htmlspecialchars($_POST['name'] ?? '');
+    $email = htmlspecialchars($_POST['email'] ?? '');
+    $club = htmlspecialchars($_POST['club'] ?? '');
 
-/* 
-Step 3 Requirements:
-- Process form data using $_POST
-- Display submitted information back to user
-- Handle name, email, and club fields
-
-Step 4 Requirements:
-- Add validation for all fields
-- Check for empty fields
-- Validate email format
-- Display appropriate error messages
-
-Step 5 Requirements:
-- Store registration data in arrays
-- Display list of all registrations
-- Use loops to process array data
-
-Step 6 Requirements:
-- Add enhanced features like:
-  - File storage for persistence
-  - Additional form fields
-  - Better error handling
-  - Search functionality
-*/
-
+    echo "<h1>Registration Confirmation</h1>";
+    echo "<p>Name: <strong>$name</strong></p>";
+    echo "<p>Email: <strong>$email</strong></p>";
+    echo "<p>Club: <strong>$club</strong></p>";
+    echo "<a href='index.html'>Go back</a>";
+} else {
+    echo "<p>Form not submitted properly.</p>";
+}
 ?>

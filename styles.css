@@ -1,11 +1,70 @@
 /* Club Registration Form Styles */
 /* TODO: Add your CSS styles here in Step 2 */
 
-/* Starter structure - feel free to modify */
-/* 
-Requirements for Step 2:
-- Link this file in your HTML
-- Style the body, form, inputs, and select elements
-- Use at least 3 different CSS properties (color, background, padding, margin, border, etc.)
-- Make it look professional and easy to read
-*/
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #007BFF;
+    color: white;
+    width: 100%;
+}
+
+/* Form styling */
+form {
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+/* Input and select styling */
+input[type="text"],
+input[type="email"],
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Button styling */
+button {
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    background-color: #f1f1f1;
+    margin-top: auto;
+}
