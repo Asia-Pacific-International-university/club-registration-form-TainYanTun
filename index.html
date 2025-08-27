@@ -13,7 +13,7 @@
     </header>
 
     <main>
-        <form action="process.php" method="POST">
+        <form action="process.php" method="post">
             <label for="name">Full Name:</label>
             <input type="text" id="name" name="name" required>
 
@@ -29,7 +29,10 @@
                 <option value="music">Music Club</option>
             </select>
 
-            <button type="submit">Register</button>
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments"></textarea>
+
+            <input type="submit" name="submit" value="Register">
         </form>
     </main>
 
