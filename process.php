@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (!$club) $errors[] = "Please select a club.";
 
     echo "<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><title>Registration Result</title>
-          <link rel='stylesheet' href='styles.css'></head><body>";
+            <link rel='stylesheet' href='styles.css'></head><body>";
 
     if ($errors) {
         echo "<div class='result error'>";
